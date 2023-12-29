@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container_01" id="home">
+      <!-----Navbar design------->
+      <nav class="navbar navbar-expand-lg navbar-light ml-1">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-lighter" href="#"
+            ><span class="text-warning">T</span>ravel</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#book">Book</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#package">Package</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallary">Gallary</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-1 border-warning"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-warning" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!---------Home Page Slide Show--------->
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./image/image-1.jpeg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-fs- d-md-block">
+              <h3 class="text-warning fw-bold">Welcome To World</h3>
+              <h4 class="text-warning fw-bold">
+                Visit Various Places on Earth Remotly
+              </h4>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./image/image-2.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./image/image-3.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!----Book Page-->
+      <div class="book" id="book">
+        <h1 class="text-center fw-bold pb-3">
+          <span class="text-warning">B</span>ook
+        </h1>
+        <div class="row">
+          <div class="col-12 col-md-5 image">
+            <img
+              src="./image/images-4.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="col-12 col-md-7 details">
+            <input type="text" placeholder="FirstName" />
+            <input type="text" placeholder="LastName" />
+            <input type="email" placeholder="raj@gmail.com" />
+            <input type="password" placeholder="password" />
+            <input type="date" placeholder="abc" />
+            <input type="text" placeholder="Message" class="message" />
+            <button>Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- --Package page Design------>
+      <div id="package" class="package px-5 pt-1 pt-lg-5 px-lg-0 pt-lg-0">
+        <h1 class="h1 p-lg-2"><span>P</span>ackages</h1>
+        <div class="row">
+          <div class="col-md-5 col-lg-3 col-12 col px-md-0">
+            <img
+              src="./image/image-5.webp"
+              alt=""
+            />
+            <div class="packageDetails">
+              <h3 class="fw-lighter">Wonderful Poland</h3>
+              <h6>Explore Poland Warsaw, Krakow, Wroclaw</h6>
+              <div class="pb-2">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-secondary"></i>
+              </div>
+              <button class="bg-success text-light border-0 p-2">
+                Buy $2,000
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-5 col-lg-3 col-12 col px-md-0">
+            <img
+              src="./image/image-6.jpg"
+              alt=""
+            />
+            <div class="packageDetails">
+              <h3 class="fw-lighter">Wonderful France</h3>
+              <h6>Explore France Paris,Lyon,Toulouse</h6>
+              <div class="pb-2">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-secondary"></i>
+              </div>
+              <button class="bg-success text-light border-0 p-2">
+                Buy $800
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-5 col-lg-3 col-12 col px-md-0">
+            <img
+              src="./image/image-7.jpg"
+              alt=""
+            />
+            <div class="packageDetails">
+              <h3 class="fw-lighter">Wonderful USA</h3>
+              <h6>Explore Poland USA Dallas Brooklyn</h6>
+              <div class="pb-2">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-secondary"></i>
+              </div>
+              <button class="bg-success text-light border-0 p-2">
+                Buy $1,000
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-5 col-lg-3 col-12 col px-md-0">
+            <img
+              src="./image/image-8.jpg"
+              alt=""
+            />
+            <div class="packageDetails">
+              <h3 class="fw-lighter">Wonderful Uruguay</h3>
+              <h6>Explore Uruguay Montevideo Salto Paysandu</h6>
+              <div class="pb-2">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-secondary"></i>
+              </div>
+              <button class="bg-success text-light border-0 p-2">
+                Buy $1,500
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-5 col-lg-3 col-12 col px-md-0">
+            <img
+              src="./image/image-9.jpg"
+              alt=""
+            />
+            <div class="packageDetails">
+              <h3 class="fw-lighter">Wonderful Switzerland</h3>
+              <h6>Explore Poland Switzerland Zunch,Geneva,Basel</h6>
+              <div class="pb-2">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-secondary"></i>
+              </div>
+              <button class="bg-success text-light border-0 p-2">
+                Buy $1,400
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-5 col-lg-3 col-12 col px-md-0">
+            <img
+              src="./image/image-10.jpg"
+              alt=""
+            />
+            <div class="packageDetails">
+              <h3 class="fw-lighter">Wonderful Sweden</h3>
+              <h6>Explore Sweden Stockholm malma Chicaga</h6>
+              <div class="pb-2">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-secondary"></i>
+              </div>
+              <button class="bg-success text-light border-0 p-2">
+                Buy $1,200
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-----Service----->
+      <div id="services" class="service mt-3 px-5 p-lg-0">
+        <h1 class="text-center fw-bold">
+          <span class="text-warning">S</span>ervice
+        </h1>
+        <div
+          class="row gap-lg-5 gap-4 justify-content-center pt-3 align-baseline"
+        >
+          <div class="col col-12 col-md-5 col-lg-3 text-center p-4">
+            <i class="fa-solid fa-hotel fa-4x text-warning"></i>
+            <h2 class="pt-2 fw-bold">Hotel</h2>
+            <p>
+              All the necessary preparations which are to be done in advance
+              before a trip.
+            </p>
+          </div>
+
+          <div class="col col-12 col-md-5 col-lg-3 text-center p-4">
+            <i class="fa-solid fa-utensils fa-4x text-warning"></i>
+            <h2 class="pt-2 fw-bold">Food & Drinks</h2>
+            <p>
+              Any substance consumed to provide nutritional support and energy
+              to an organism.
+            </p>
+          </div>
+
+          <div class="col col-12 col-md-5 col-lg-3 text-center p-4">
+            <i class="fa-solid fa-user-shield fa-4x text-warning"></i>
+            <h2 class="pt-2 fw-bold">Safety Guide</h2>
+            <p>
+              Whether you are developing HSMS, conducting a safety awareness
+              workshop.
+            </p>
+          </div>
+
+          <div class="col col-12 col-md-5 col-lg-3 text-center p-4">
+            <i class="fa-solid fa-earth-americas fa-4x text-warning"></i>
+            <h2 class="pt-2 fw-bold">Around the World</h2>
+            <p>
+              Around the World" is a song by French electronic music duo Daft
+              Punk.
+            </p>
+          </div>
+
+          <div class="col col-12 col-md-5 col-lg-3 text-center p-4">
+            <i class="fa-solid fa-plane fa-4x text-warning"></i>
+            <h2 class="pt-2 fw-bold">Fastest Travel</h2>
+            <p>
+              So Flight is the fastest thing. Nothing can go faster than that.
+            </p>
+          </div>
+
+          <div class="col col-12 col-md-5 col-lg-3 text-center p-4">
+            <i class="fa-regular fa-thumbs-up fa-4x text-warning"></i>
+            <h2 class="pt-2 fw-bold">Adventures</h2>
+            <p>
+              An unusual, exciting, and possibly dangerous activity, such as a
+              trip or experience.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-----Gallary ----->
+      <div id="gallary" class="gallary p-5">
+        <h1 class="text-center fw-bold pt-0 pb-2 pt-lg-5 pb-lg-3">
+          <span class="text-warning">G</span>allary
+        </h1>
+        <div class="row align-baseline justify-content-center gap-4">
+          <div class="col col-12 col-lg-3">
+            <img
+              src="./image/image-11.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col col-12 col-lg-3">
+            <img
+              src="./image/image-12.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col col-12 col-lg-3">
+            <img
+              src="./image/image-13.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col col-12 col-lg-3">
+            <img
+              src="./image/image-14.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col col-12 col-lg-3">
+            <img
+              src="./image/image-15.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col col-12 col-lg-3">
+            <img
+              src="./image/image-16.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-----About Us----->
+      <div id="about" class="about px-5 pb-5">
+        <h1 class="fw-bold text-center pb-3 pt-2 pt-lg-4 pb-lg-3">
+          <span class="text-warning">A</span>bout
+          <span class="text-warning">Us</span>
+        </h1>
+        <div class="row gap-4 align-baseline">
+          <div class="col col-lg-5 col-12">
+            <img
+              src="./image/image-17.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col col-lg-6 col-12">
+            <h1>Travel Agency Work</h1>
+            <p>
+              The primary role of a travel agent is to help people make travel
+              arrangements, which might include booking flights, hotels,
+              sightseeing tours, and making dining recommendations. A travel
+              agent assesses each customer's unique needs, preferences, and
+              budget to ensure their trip goes as smoothly as possible.They
+              involve in promoting and marketing all types of travel services
+              such as tour packages, hotel services, air services, car rental
+              services, travel insurance etc. They use both print and
+              electronic-media for marketing and publicity of their products.
+            </p>
+            <button class="bg-warning text-light p-2 border-0 rounded">
+              Read More...
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!------Footer Page------->
+      <div class="footerPage py-4 px-5">
+        <h1 class="fw-bolder"><span class="text-warning">T</span>ravel</h1>
+        <p>
+          Being traveled all around the world and passionate about the culture
+          and heritage
+        </p>
+        <div class="icon">
+          <i class="fa-brands fa-linkedin fa-2x"></i>
+          <i class="fa-brands fa-facebook fa-2x"></i>
+          <i class="fa-brands fa-github fa-2x"></i>
+          <i class="fa-brands fa-twitter fa-2x"></i>
+          <i class="fa-brands fa-instagram fa-2x"></i>
+        </div>
+        <p class="pt-3">Designed By <a href="#">SA Coding</a></p>
+        <p>Privacy & policy</p>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
